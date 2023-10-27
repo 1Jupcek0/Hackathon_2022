@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="../css/Styly.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <title> | Clueless | </title>
+    <meta charset='utf-8'>
+</head>
+
+<body>
+    <script type="text/javascript"
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCQGpNtisdz5YeCjMdcfUcavN7zHPJroQo"></script>
+
+    <header class="mainHeader">
+
+        <div class="mainMenu">
+            <button class="mainUpperBarMenu" type="button" onclick="location.href='../html/Main.html'">Domů</button>
+            <button class="mainUpperBarMenu" type="button" onclick="location.href='../html/Skoly.html'">Školy</button>
+            <button class="mainUpperBarMenu" type="button" onclick="location.href='../html/Mapa.html'">Mapa</button>
+            <button class="mainUpperBarMenu projekt" type="button" onclick="location.href='../html/Oprojektu.html'">O
+                projektu</button>
+        </div>
+    </header>
+    <main>
+        <div class="mainDiv">
+            <div id="map" class="mapaHolder mapaSide"></div>
+            <div class="sideMapBar">
+                <input class="miniVyhledavac" type="text" id="q" placeholder="Škola, internát, jídelna, atd...">
+                <button class="searchButton material-icons miniVyhledavani" type="submit" value="Hledat"
+                    id="FButton">search</button>
+                <p class="filtersText" style="margin-top: 10px;">Druh</p>
+                <select name="druh" id="zDruh" class="mapaOkresy" style="top: 35px;"></select>
+                <p class="filtersText" style="margin-top: 38px;">Okres</p>
+                <select name="okres" id="okres" class="mapaOkresy" style="top:213px; position:absolute;"></select>
+                <div class="mapAns" id="answerMap"></div>
+            </div>
+        </div>
+    </main>
+    <footer>Skupina Clueless 2022</footer>
+</body>
+<script src="../scripts/searchDB.js"></script>
+<script src="../scripts/mapa.js"></script>
+
+<script>
+
+    window.onload = function () {
+        function getQueryVariable(variable) {
+            var query = window.location.search.substring(1);
+            var vars = query.split('&');
+            for (var i = 0; i < vars.length; i++) {
+                var pair = vars[i].split('=');
+                console.log(pair)
+                if (decodeURIComponent(pair[0]) == variable) {
+                    return decodeURIComponent(pair[1]);
+                }
+            }
+            console.log('Query variable %s not found', variable);
+        }
+
+        if (getQueryVariable('nazev') != undefined) {
+            document.getElementById('q').value = getQueryVariable('nazev');
+
+            document.getElementById("FButton").click();
+        }
+    }
+
+
+</script>
+
+</html>

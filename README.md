@@ -1,1 +1,4 @@
-# Hackathon_2022
+## Hackathon_2022
+
+# Run
+* VSCode - LiveSever

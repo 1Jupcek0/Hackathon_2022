@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0px;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 100%;
+}
+
+.mainHeader {
+    z-index: 3;
+    position: fixed;
+    background-color: #1e3262;
+    width: 100%;
+    height: 55px;
+    justify-content: center;
+
+}
+
+.mainUpperBarMenu {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    transition: 0.5s;
+    height: 35px;
+
+}
+
+.projekt {
+    min-width: 150px;
+}
+
+.mainUpperBarMenu:hover {
+    background-color: #17284d;
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.mainMenu {
+    margin: auto;
+    padding: 10px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    width: 45%;
+}
+
+.mainDiv {
+    width: 100%;
+    margin: auto;
+    height: 100%;
+}
+
+footer {
+    z-index: 3;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    width: 100%;
+    margin: auto;
+    height: 40px;
+    text-align: center;
+    padding-top: 10px;
+    background-color: #1e3262;
+    position: fixed;
+    bottom: 0;
+    color: white;
+}
+
+.place {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+}
+
+.mapaHolder {
+    top:0;
+    position: absolute;
+    background-image: url("https://www.uhk.cz/file/edee/fakulta-informatiky-a-managementu/fim/p1000621_oprava_bez-kose.jpg");
+    width: 100%;
+    height: 100%;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.mainTopDiv{
+    padding-top:16%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    margin: auto;
+}
+
+.mainTextDiv{
+    font-family:'Open Sans', sans-serif;
+    text-align: center;
+    color:white;
+    padding-top: 10px;
+    width: 100%;
+    height: 50%;
+    background-color: #00000099;
+    margin:auto;
+    
+}
+
+.textik{
+    font-size: 20px;
+}
+
+
+
+.searchButton {
+    top: -35px;
+    left: 290px;
+    position: relative;
+    z-index: 1;
+    width: 5px;
+    height: 30px;
+    background-color: rgb(64, 62, 141);
+    color: white;
+    padding-right: 30px;
+}
+
+/*................*/
+
+.oProjektu {
+    padding-top: 5%;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-image: url("https://www.uhk.cz/file/edee/fakulta-informatiky-a-managementu/fim/p1000621_oprava_bez-kose.jpg");
+}
+
+.oProjektuInfoDiv {
+    width: 100%;
+    height: 90%;
+    margin: auto;
+    background-color: #00000099;
+    padding-top: 10px;
+    padding-left: 50px;
+    color: white;
+    text-underline-offset: 5px;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+    padding: 2px 1px 0;
+  }
+  
+  a:link {
+    color: #ffffff;
+  }
+  
+  a:visited {
+    color: #ffffff;
+  }
+  
+  
+  a:hover {
+    border-bottom: 1px solid;
+    background:#34407d;
+  }
+  
+  a:active {
+    background: #265301;
+    color: #CDFEAA;
+  }
+
+/*................*/
+#skolaAns{
+    position: relative;
+    padding-top: 10px;
+    font-family: 'Open Sans', sans-serif;
+    transition: 0.2s;
+    width: 95%;
+    height: 15vh;
+    text-align: center;
+    background-color: #333765;
+    font-size: 14px;
+    border: ridge 5px rgb(71, 64, 146);
+}
+
+#skolaAns:hover{
+    transform: scale(1.1);
+    transition: 0.2s;
+
+}
+
+.skolyDiv {
+    position: relative;
+    top: 55px;
+    width: 100%;
+    height: 50px;
+    background-color: #34407d;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    padding-top: 12px;
+    padding-left: 125px;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.skolySeznam {
+    margin-top: 30px;
+    padding-left: 35px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    row-gap: 5px;
+}
+z {
+    width: 45vh;
+    height: 90px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.cisla {
+    color: white;
+    min-width: 200px;
+}
+
+/*................*/
+
+.mapB{
+
+    position: absolute;
+    right: 2px;
+    bottom: 2px;
+    background-color: #42519b;
+    border-radius: 3px;
+    width: 70px;
+    height: 25px;
+    z-index: 3;
+    cursor: pointer;
+    color: white;
+
+}
+
+.mapAns {
+    margin-top: 100px;
+    padding: 5px;
+    height: 61vh;
+    overflow: auto;
+    border: solid 8px #24275f; 
+    border-left: none;
+    border-bottom: none;
+    border-right: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+}
+
+.mapAns::-webkit-scrollbar {
+    width: 0.00001px;
+  }
+.ansMapActive {
+    background-color: #17284d;
+    transform: scale(0.97);
+    border-radius: 5px;
+    transition: 0.2s;
+}
+.ansMap {
+    padding: 3px;
+    transition: 0.2s;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    }
+
+.ansMap:hover {
+    background-color: #17284d;
+    transform: scale(0.97);
+    border-radius: 5px;
+    transition: 0.2s;
+}
+
+.mapaSide {
+    right: 0;
+    width: 80%;
+    margin-top: 54px;
+    height: 100%;
+    z-index: 1;
+}
+
+.sideMapBar {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 20%;
+    min-width: 300px;
+    height: 100vh;
+    background-color: #34407d;
+    min-width: 300px;
+    position: fixed;
+    z-index: 2;
+}
+
+.miniVyhledavac {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    padding-left: 10px;
+    width: 70%;
+    height: 30px;
+    margin-left: 10%;
+    margin-top: 50px;
+}
+
+.miniVyhledavani {
+    font-family: 'Open Sans', sans-serif;
+    left: 0;
+    top: 7px;
+    background-color: #34407d;
+}
+
+.mapaOkresy {
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+    width: 170px;
+    top: 50px;
+    left: 50px;
+}
+
+.filtersText {
+    font-family: 'Open Sans', sans-serif;
+    position: absolute;
+    left: 55px;
+    margin-top: 30px;
+    color: white;
+    max-width: 500px;
+}
+.pageButton{
+    position: absolute;
+    font-weight: bold;
+    font-family:'Open Sans', sans-serif;
+    background-color: #253a68;
+    border-radius: 10px;
+    width: 4vh;
+    height: 4vh;
+    color: rgb(255, 255, 255);
+
+    text-align: center;
+    font-size: 15px;
+    bottom: 50px;
+    cursor: pointer;
+}

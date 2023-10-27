@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang='cs'>
+    <head>
+        <link rel="stylesheet" type="text/css" href="../css/Styly.css"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <title> | Clueless | </title>
+        <meta charset='utf-8'>
+    </head>
+
+    <body>
+        <header class="mainHeader">
+            
+            <div class="mainMenu">
+                <button class="mainUpperBarMenu" type="button" onclick="location.href='../html/Main.html'">Domů</button>
+                <button class="mainUpperBarMenu" type="button" onclick="location.href='../html/Skoly.html'">Školy</button>
+                <button class="mainUpperBarMenu" type="button" onclick="location.href='../html/Mapa.html'">Mapa</button>
+                <button class="mainUpperBarMenu projekt" type="button" onclick="location.href='../html/Oprojektu.html'">O projektu</button>
+            </div>
+            
+        </header>
+
+
+        <main>
+            <div class="skolyDiv">
+                <div class="cisla" id="materske">X Mateřských škol</div>
+                <div class="cisla" id="zakladni">X Základních škol</div>
+                <div class="cisla" id="stredni">X Středních škol</div>
+                <div class="cisla" id="vysoke">X Vysokých škol</div>
+                <div class="cisla" id="internaty">X Internátů</div>
+                <div class="cisla" id="knihovny">X Knihoven</div>
+            </div>
+            <div class="filteryDiv">
+                <input class="miniVyhledavac" style="margin-top: 80px; margin-left:30px; width:250px;" type="text" id="q" placeholder="Škola, internát, jídelna, atd...">
+                <button class="searchButton material-icons miniVyhledavani" type="submit" value="Hledat" id="FButton" style="margin-top:50px;">search</button>
+                <p class="filtersText" style="margin-top:-25px;margin-left:400px;color: black; min-width: 100px;">Druh</p>
+                <select name="druh" id="zDruh" class="mapaOkresy" style="top:2px;left: 175px;"></select>
+                <p class="filtersText" style="margin-left:650px;margin-top: -25px; color: black; min-width: 100px;">Okres</p>
+                <select name="okres" id="okres" class="mapaOkresy"style="top: 2px; left:260px;"></select>
+                    
+                <u id="pVys" style="font-family:'Open Sans', sans-serif; margin-left:-340px;top:2px; min-width: 350px;"></u>
+            </div>
+            <div class="skolySeznam" id="answer" style="padding-top: 0px;">
+            </div>
+            <button class="pageButton" id="predchozi" onclick="Previous()" style="left: 46.5%;"><</button>
+            <button class="pageButton" id="aktualni"style="left:48.6%;">X</button>
+            <button class="pageButton" id="dalsi" onclick="Next()"style="left: 50.7%;">></button>
+            <footer>Skupina Clueless 2022</footer>
+        </main>
+        
+
+    </body>
+    <script src="../scripts/searchDB.js"></script>
+    <script src="../scripts/fillStat.js"></script>
+</html>

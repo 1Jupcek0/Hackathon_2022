@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang='cs'>
+    <head>
+        <link rel="stylesheet" type="text/css" href="../css/Styly.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <title> | Clueless | </title>
+        <meta charset='utf-8'>
+    </head>   
+    <div class="mainTopDiv">
+        <div class="mainTextDiv">
+            <h1>Školní zařízení KHK</h1>
+            <div class="textik">Nevíte, kam na školu?<br>
+            Tak náš web je právě pro vás!<br>
+            Najděte školy různých typů spolu se školními zařízeními<br>v Královehradeckém kraji!☻
+            </div>
+        </div>
+    </div> 
+
+    <footer><b>Skupina Clueless 2022</b></footer>
+    
+    <body>
+        <header class="mainHeader">
+            
+            <div class="mainMenu">
+                <button class="mainUpperBarMenu" type="button" onclick="location.href='../html/Main.html'">Domů</button>
+                <button class="mainUpperBarMenu" type="button" onclick="location.href='../html/Skoly.html'">Školy</button>
+                <button class="mainUpperBarMenu" type="button" onclick="location.href='../html/Mapa.html'">Mapa</button>
+                <button class="mainUpperBarMenu projekt" type="button" onclick="location.href='../html/Oprojektu.html'">O projektu</button>
+            </div>
+        </header>
+        
+        <main>
+            <div class="mainDiv">
+                <div class="place">
+                    <div class="mapaHolder"></div>
+                </div>
+            </div>
+        </main>
+        <select id="zDruh" style="visibility: hidden;"></select>
+        <select id="okres" style="visibility: hidden;"></select>
+    </body>
+    <script src="../scripts/searchDB.js"></script>
+
+</html>
+
