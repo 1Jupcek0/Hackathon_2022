@@ -1,4 +1,8 @@
-## Hackathon_2022
+# Hackathon_2022
 
-# Run
+Run
 * VSCode - LiveSever
+
+Collaborators
+* Natálie Zlatníková
+* Bondar Oleksandr
